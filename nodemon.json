@@ -1,0 +1,8 @@
+{
+    "env":{
+        "MONGO_ATLAS_PW":"berkan12",
+        "JWT_KEY":"berkan12"
+    } 
+
+
+}
