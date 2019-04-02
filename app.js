@@ -11,9 +11,7 @@ const userRoutes =require ('./api/routes/user');
 const rateRoutes =require ('./api/routes/rates');
 
 
-mongoose.connect('mongodb://berkan:'+
-process.env.MONGO_ATLAS_PW+
-'@cluster0-shard-00-00-gbmnd.mongodb.net:27017,cluster0-shard-00-01-gbmnd.mongodb.net:27017,cluster0-shard-00-02-gbmnd.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true',
+mongoose.connect('mongodb+srv://berkan:'+process.env.MONGO_ATLAS_PW+'@cluster0-gbmnd.mongodb.net/test?retryWrites=true',
 { useNewUrlParser: true }
 
 );
